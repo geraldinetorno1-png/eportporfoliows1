@@ -1,120 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
+ 
 <body>
+ 
+<header id="home">
+    <h1>Geraldine T. Agang</h1>
+    <h2>Bachelor of Science in Information Technology</h2>
+    <p>Aspiring Web Developer</p>
+</header>
+ 
+<nav class="navbar">
+    <div class="logo">
+        <img src="logo.png" alt="Logo" width="60">
+    </div>
+ 
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
 
-    
-    <header id="home">
-        <h1>Geraldine T. Agang</h1>
-        <h2>BS Information Technology</h2>
-        <p>Aspiring Web Developer</p>
-    </header>
+    <button id="darkModeBtn" Dark Mode</button>
 
-    
-    <nav>
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo">
-        </div>
-
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
-
-   
-    <section id="about">
+</nav>
+ 
+<section id="about" class="about">
+ 
+    <img src="profile.png" alt="Profile Picture" width="250">
+ 
+    <div class="about-text">
+ 
         <h2>About Me</h2>
-
+ 
         <p>
-            Hi! My name is Geraldine T. Agang. I am a BS Information Technology student. I am still learning about computers and web development. It hasn't always been easy for me, but I keep trying to improve my skills through school activities and practice. I hope to become a successful IT professional in the future.
+            Hi! I'm Geraldine T. Agang, a Bachelor of Science in Information Technology student. I enjoy learning about computers and web development. Every school project helps me improve my skills and gain more experience. My goal is to become a skilled web developer and continue creating useful and user-friendly websites.
         </p>
-
+ 
         <h3>Educational Background</h3>
-
+ 
         <ul>
             <li>Elementary - E. Asion Elementary School</li>
             <li>High School - San Jose National High School</li>
             <li>College - Bachelor of Science in Information Technology</li>
         </ul>
-    </section>
-
-    
-    <section id="skills">
-        <h2>Skills</h2>
-
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Communication Skills</li>
-        </ul>
-    </section>
-
-   
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <div>
+ 
+    </div>
+ 
+</section>
+ 
+<section id="skills">
+ 
+    <h2>Skills</h2>
+ 
+    <div class="skills-container">
+ 
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">Good Communication</div>
+        <div class="card">MySQL</div>
+        <div class="card">Problem Solving</div>
+ 
+    </div>
+ 
+</section>
+ 
+<section id="projects">
+ 
+    <h2>Projects</h2>
+ 
+    <div class="projects-container">
+ 
+        <div class="project-card">
+            <img src="https://via.placeholder.com/300x200" alt="Barangay Residence Record Management System">
+ 
             <h3>Barangay Residence Record Management System</h3>
-
-            <img src="https://via.placeholder.com/200" alt="Barangay Residence Record Management System">
-
+ 
             <p>
-                A simple system that helps organize and manage the records of barangay residents in one place.
+                A simple system that helps organize and manage barangay resident records efficiently.
             </p>
-
-            <p><strong>Technology Used:</strong> HTML and CSS</p>
+ 
+            <button>View Project</button>
         </div>
-
-        <div>
+ 
+        <div class="project-card">
+            <img src="https://via.placeholder.com/300x200" alt="Online Pet Adoption System">
+ 
             <h3>Online Pet Adoption System</h3>
-
-            <img src="https://via.placeholder.com/200" alt="Online Pet Adoption System">
-
+ 
             <p>
-                A website where users can view pets that are available for adoption and read basic information about them.
+                A website where users can browse pets available for adoption and learn more about them.
             </p>
-
-            <p><strong>Technology Used:</strong> HTML and CSS</p>
+ 
+            <button>View Project</button>
         </div>
-
-        <div>
+ 
+        <div class="project-card">
+            <img src="https://via.placeholder.com/300x200" alt="Library Management System">
+ 
             <h3>Library Management System</h3>
-
-            <img src="https://via.placeholder.com/200" alt="Library Management System">
-
+ 
             <p>
-                A simple system for managing books, keeping library records, and checking available books.
+                A simple system for managing books, library records, and borrowing information.
             </p>
-
-            <p><strong>Technology Used:</strong> HTML and CSS</p>
+ 
+            <button>View Project</button>
         </div>
-    </section>
-
-    
-    <section id="contact">
-        <h2>Contact</h2>
-
-        <p>Email: geraldineagang082006@gmail.com</p>
-        <p>Phone: 09166178419</p>
-        <p>Facebook: Geraldine Agang</p>
-    </section>
-
-    
-    <footer>
-        <p>&copy; 2026 Geraldine T. Agang. All Rights Reserved.</p>
-    </footer>
-
+ 
+    </div>
+ 
+</section>
+ 
+<section id="contact">
+ 
+    <h2>Contact Me</h2>
+ 
+    <p><strong>Email:</strong> geraldineagang082006@gmail.com</p>
+    <p><strong>Phone:</strong> 09166178419</p>
+    <p><strong>Facebook:</strong> Geraldine Agang</p>
+ 
+</section>
+ 
+<footer>
+    <p>&copy; 2026 Geraldine T. Agang. All Rights Reserved.</p>
+</footer>
+<script>
+    const button = document.getElementById("darkModeBtn");
+     
+    button.onclick = function(){
+        document.body.classList.toggle("dark-mode");
+     
+        if(document.body.classList.contains("dark-mode")){
+            button.innerHTML = "☀️ Light Mode";
+        } else {
+            button.innerHTML = "🌙 Dark Mode";
+        }
+    }
+    </script>
 </body>
 
 </html>
+ 
